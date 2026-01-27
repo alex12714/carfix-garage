@@ -53,10 +53,15 @@ app.use(helmet({
 
 app.use(cors());
 
+// Trust proxy (for rate limiting behind Traefik)
+app.set('trust proxy', 1);
+
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false
 });
 app.use('/api/', limiter);
 
@@ -76,7 +81,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Get services with pricing
 app.get('/api/services', (req, res) => {
-  res.json(require('./data/services.json'));
+  res.json(require('./config/services.json'));
 });
 
 // Create booking
@@ -98,7 +103,7 @@ app.post('/api/bookings', async (req, res) => {
     } = req.body;
 
     // Calculate total price
-    const servicesData = require('./data/services.json');
+    const servicesData = require('./config/services.json');
     let totalPrice = 0;
     const selectedServices = [];
 
