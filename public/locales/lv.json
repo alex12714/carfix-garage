@@ -3,62 +3,96 @@
     "title": "Car Fix Garage",
     "tagline": "Profesionāls auto remonts Rīgā"
   },
-  "nav": {
-    "services": "Pakalpojumi",
-    "booking": "Rezervēt",
-    "contact": "Kontakti"
-  },
-  "hero": {
-    "title": "Ekspertu auto remonts",
-    "subtitle": "Kvalitatīvs serviss, kam varat uzticēties",
-    "cta": "Rezervēt vizīti"
+  "wizard": {
+    "back": "Atpakaļ",
+    "continue": "Turpināt",
+    "step1": {
+      "title": "Kas jūs šodien pie mums atved?",
+      "subtitle": "Izvēlieties, kas vislabāk apraksta jūsu situāciju",
+      "broken": "Kaut kas salūzis",
+      "brokenDesc": "Manai mašīnai ir problēma, kas jālabo",
+      "maintenance": "Regulāra apkope",
+      "maintenanceDesc": "Eļļas maiņa, apskate vai plānota apkope",
+      "tyres": "Riepas un riteņi",
+      "tyresDesc": "Sezonas maiņa, remonts vai balansēšana",
+      "inspection": "Pārbaude",
+      "inspectionDesc": "Pirms-pirkuma vai pilna pārbaude"
+    },
+    "step2": {
+      "title": "Kura zona prasa uzmanību?",
+      "subtitle": "Izvēlieties sistēmu, kurai ir problēmas"
+    },
+    "step3": {
+      "title": "Izvēlieties pakalpojumus",
+      "titleBroken": "Kas notiek?",
+      "titleSelect": "Izvēlieties pakalpojumus",
+      "subtitle": "Izvēlieties visus, kas attiecas",
+      "selected": "Izvēlētie pakalpojumi"
+    },
+    "step4": {
+      "title": "Gandrīz gatavs!",
+      "subtitle": "Pastāstiet par sevi un savu auto",
+      "orderSummary": "Jūsu pasūtījums",
+      "total": "Kopā",
+      "contact": "Kontaktinformācija",
+      "name": "Jūsu vārds",
+      "phone": "Tālrunis",
+      "email": "E-pasts",
+      "vehicle": "Auto informācija",
+      "make": "Marka",
+      "model": "Modelis",
+      "year": "Gads",
+      "registration": "Reģ. numurs",
+      "appointment": "Vēlamais apmeklējums",
+      "date": "Datums",
+      "time": "Laiks",
+      "morning": "Rīts",
+      "afternoon": "Diena",
+      "evening": "Vakars",
+      "notes": "Vai vēl kaut kas mums jāzina?",
+      "notesPlaceholder": "Aprakstiet problēmu detalizētāk...",
+      "extras": "Vajadzīga saņemšana vai piegāde?",
+      "pickup": "Paņemt manu auto (+€25)",
+      "delivery": "Piegādāt manu auto atpakaļ (+€25)",
+      "checkout": "Turpināt uz apmaksu"
+    },
+    "areas": {
+      "engine": "Dzinējs",
+      "engineDesc": "Neiedarbinās, dīvainas skaņas vai slikts sniegums",
+      "brakes": "Bremzes",
+      "brakesDesc": "Čīkst, griezējas vai slikti bremzē",
+      "electrical": "Elektriskie",
+      "electricalDesc": "Akumulators, gaismas vai elektronikas problēmas",
+      "exhaust": "Izplūde",
+      "exhaustDesc": "Skaļa izplūde, dūmi vai emisijas",
+      "other": "Kaut kas cits",
+      "otherDesc": "Kondicionieris, tīrītāji vai vispārējas problēmas",
+      "oilService": "Eļļa un šķidrumi",
+      "oilServiceDesc": "Eļļas maiņa, dzesētājs vai šķidrumu papildināšana",
+      "brakeService": "Bremžu serviss",
+      "brakeServiceDesc": "Kluču maiņa vai bremžu šķidrums",
+      "acService": "Gaisa kondicionieris",
+      "acServiceDesc": "Kondicioniera uzpilde vai serviss",
+      "fullService": "Pilns serviss",
+      "fullServiceDesc": "Pilna automašīnas apkope",
+      "tyreChange": "Riepu maiņa",
+      "tyreChangeDesc": "Sezonas maiņa (vasara/ziema)",
+      "tyreRepair": "Riepu remonts",
+      "tyreRepairDesc": "Cauruma remonts vai spiediena pārbaude",
+      "wheelService": "Riteņu serviss",
+      "wheelServiceDesc": "Balansēšana vai savirze",
+      "prePurchase": "Pirms-pirkuma",
+      "prePurchaseDesc": "Pērkat lietotu auto? Ļaujiet mums pārbaudīt",
+      "fullInspection": "Pilna pārbaude",
+      "fullInspectionDesc": "Pilna automašīnas veselības pārbaude"
+    }
   },
   "services": {
-    "title": "Mūsu pakalpojumi",
-    "selectServices": "Izvēlieties pakalpojumus",
-    "price": "Cena",
-    "duration": "Ilgums",
     "free": "Bezmaksas",
-    "requestQuote": "Pieprasīt cenu",
-    "perItem": "par gab."
-  },
-  "booking": {
-    "title": "Rezervējiet vizīti",
-    "selectedServices": "Izvēlētie pakalpojumi",
-    "total": "Kopā",
-    "noServices": "Nav izvēlēti pakalpojumi",
-    "customerInfo": "Jūsu informācija",
-    "name": "Vārds, uzvārds",
-    "email": "E-pasts",
-    "phone": "Tālrunis",
-    "vehicleInfo": "Automašīnas informācija",
-    "make": "Marka",
-    "model": "Modelis",
-    "year": "Gads",
-    "registration": "Reģistrācijas numurs",
-    "appointment": "Vizīte",
-    "date": "Vēlamais datums",
-    "time": "Vēlamais laiks",
-    "notes": "Papildu piezīmes",
-    "notesPlaceholder": "Aprakstiet problēmu vai īpašos pieprasījumus...",
-    "submit": "Turpināt uz apmaksu",
-    "submitQuote": "Pieprasīt cenu",
-    "morning": "Rīts (8:00 - 12:00)",
-    "afternoon": "Pēcpusdiena (12:00 - 17:00)",
-    "evening": "Vakars (17:00 - 19:00)"
+    "requestQuote": "Pieprasīt cenu"
   },
   "contact": {
-    "title": "Sazinieties ar mums",
-    "address": "Adrese",
-    "phone": "Tālrunis",
-    "email": "E-pasts",
-    "hours": "Darba laiks",
-    "weekdays": "P - Pk: 8:00 - 19:00",
-    "saturday": "Sestdiena: 9:00 - 15:00",
-    "sunday": "Svētdiena: Slēgts"
-  },
-  "footer": {
-    "copyright": "© 2024 Car Fix Garage. Visas tiesības aizsargātas."
+    "hours": "P-Pk 8-19, Se 9-15"
   },
   "success": {
     "title": "Rezervācija apstiprināta!",
@@ -67,15 +101,9 @@
     "appointmentDate": "Vizītes datums",
     "appointmentTime": "Vizītes laiks",
     "total": "Kopējā summa",
-    "backHome": "Atpakaļ uz sākumu"
-  },
-  "errors": {
-    "required": "Šis lauks ir obligāts",
-    "invalidEmail": "Lūdzu, ievadiet derīgu e-pastu",
-    "invalidPhone": "Lūdzu, ievadiet derīgu tālruņa numuru",
-    "selectService": "Lūdzu, izvēlieties vismaz vienu pakalpojumu",
-    "selectDate": "Lūdzu, izvēlieties datumu",
-    "selectTime": "Lūdzu, izvēlieties laiku",
-    "bookingFailed": "Rezervācija neizdevās. Lūdzu, mēģiniet vēlreiz."
+    "backHome": "Atpakaļ uz sākumu",
+    "morning": "Rīts (8:00 - 12:00)",
+    "afternoon": "Diena (12:00 - 17:00)",
+    "evening": "Vakars (17:00 - 19:00)"
   }
 }

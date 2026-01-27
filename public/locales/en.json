@@ -3,62 +3,96 @@
     "title": "Car Fix Garage",
     "tagline": "Professional Auto Repair in Riga"
   },
-  "nav": {
-    "services": "Services",
-    "booking": "Book Now",
-    "contact": "Contact"
-  },
-  "hero": {
-    "title": "Expert Car Repair",
-    "subtitle": "Quality service you can trust",
-    "cta": "Book an Appointment"
+  "wizard": {
+    "back": "Back",
+    "continue": "Continue",
+    "step1": {
+      "title": "What brings you in today?",
+      "subtitle": "Select what best describes your situation",
+      "broken": "Something's Broken",
+      "brokenDesc": "My car has a problem that needs fixing",
+      "maintenance": "Regular Maintenance",
+      "maintenanceDesc": "Oil change, inspection, or scheduled service",
+      "tyres": "Tyres & Wheels",
+      "tyresDesc": "Seasonal change, repair, or balancing",
+      "inspection": "Inspection",
+      "inspectionDesc": "Pre-purchase check or full vehicle inspection"
+    },
+    "step2": {
+      "title": "What area needs attention?",
+      "subtitle": "Select the system that's having issues"
+    },
+    "step3": {
+      "title": "Select services",
+      "titleBroken": "What's happening?",
+      "titleSelect": "Select services",
+      "subtitle": "Select all that apply",
+      "selected": "Selected Services"
+    },
+    "step4": {
+      "title": "Almost done!",
+      "subtitle": "Tell us about you and your car",
+      "orderSummary": "Your Order",
+      "total": "Total",
+      "contact": "Contact Information",
+      "name": "Your Name",
+      "phone": "Phone",
+      "email": "Email",
+      "vehicle": "Vehicle Details",
+      "make": "Make",
+      "model": "Model",
+      "year": "Year",
+      "registration": "Reg. Number",
+      "appointment": "Preferred Appointment",
+      "date": "Date",
+      "time": "Time",
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening",
+      "notes": "Anything else we should know?",
+      "notesPlaceholder": "Describe the problem in more detail...",
+      "extras": "Need pickup or delivery?",
+      "pickup": "Pick up my car (+€25)",
+      "delivery": "Deliver my car back (+€25)",
+      "checkout": "Proceed to Payment"
+    },
+    "areas": {
+      "engine": "Engine",
+      "engineDesc": "Won't start, strange noises, or poor performance",
+      "brakes": "Brakes",
+      "brakesDesc": "Squeaking, grinding, or poor stopping",
+      "electrical": "Electrical",
+      "electricalDesc": "Battery, lights, or electronics issues",
+      "exhaust": "Exhaust",
+      "exhaustDesc": "Loud exhaust, smoke, or emissions",
+      "other": "Something Else",
+      "otherDesc": "AC, wipers, or general problems",
+      "oilService": "Oil & Fluids",
+      "oilServiceDesc": "Oil change, coolant, or fluid top-up",
+      "brakeService": "Brake Service",
+      "brakeServiceDesc": "Pad replacement or brake fluid",
+      "acService": "Air Conditioning",
+      "acServiceDesc": "AC regas or service",
+      "fullService": "Full Service",
+      "fullServiceDesc": "Complete vehicle maintenance",
+      "tyreChange": "Tyre Change",
+      "tyreChangeDesc": "Seasonal swap (summer/winter)",
+      "tyreRepair": "Tyre Repair",
+      "tyreRepairDesc": "Puncture repair or pressure check",
+      "wheelService": "Wheel Service",
+      "wheelServiceDesc": "Balancing or alignment",
+      "prePurchase": "Pre-Purchase",
+      "prePurchaseDesc": "Buying a used car? Let us check it first",
+      "fullInspection": "Full Inspection",
+      "fullInspectionDesc": "Complete vehicle health check"
+    }
   },
   "services": {
-    "title": "Our Services",
-    "selectServices": "Select Services",
-    "price": "Price",
-    "duration": "Duration",
     "free": "Free",
-    "requestQuote": "Request Quote",
-    "perItem": "per item"
-  },
-  "booking": {
-    "title": "Book Your Appointment",
-    "selectedServices": "Selected Services",
-    "total": "Total",
-    "noServices": "No services selected",
-    "customerInfo": "Your Information",
-    "name": "Full Name",
-    "email": "Email",
-    "phone": "Phone Number",
-    "vehicleInfo": "Vehicle Information",
-    "make": "Make",
-    "model": "Model",
-    "year": "Year",
-    "registration": "Registration Number",
-    "appointment": "Appointment",
-    "date": "Preferred Date",
-    "time": "Preferred Time",
-    "notes": "Additional Notes",
-    "notesPlaceholder": "Describe your issue or any special requests...",
-    "submit": "Proceed to Payment",
-    "submitQuote": "Request Quote",
-    "morning": "Morning (8:00 - 12:00)",
-    "afternoon": "Afternoon (12:00 - 17:00)",
-    "evening": "Evening (17:00 - 19:00)"
+    "requestQuote": "Get Quote"
   },
   "contact": {
-    "title": "Contact Us",
-    "address": "Address",
-    "phone": "Phone",
-    "email": "Email",
-    "hours": "Working Hours",
-    "weekdays": "Mon - Fri: 8:00 - 19:00",
-    "saturday": "Saturday: 9:00 - 15:00",
-    "sunday": "Sunday: Closed"
-  },
-  "footer": {
-    "copyright": "© 2024 Car Fix Garage. All rights reserved."
+    "hours": "Mon-Fri 8-19, Sat 9-15"
   },
   "success": {
     "title": "Booking Confirmed!",
@@ -67,15 +101,9 @@
     "appointmentDate": "Appointment Date",
     "appointmentTime": "Appointment Time",
     "total": "Total Paid",
-    "backHome": "Back to Home"
-  },
-  "errors": {
-    "required": "This field is required",
-    "invalidEmail": "Please enter a valid email",
-    "invalidPhone": "Please enter a valid phone number",
-    "selectService": "Please select at least one service",
-    "selectDate": "Please select a date",
-    "selectTime": "Please select a time slot",
-    "bookingFailed": "Booking failed. Please try again."
+    "backHome": "Back to Home",
+    "morning": "Morning (8:00 - 12:00)",
+    "afternoon": "Afternoon (12:00 - 17:00)",
+    "evening": "Evening (17:00 - 19:00)"
   }
 }
