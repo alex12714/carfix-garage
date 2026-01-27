@@ -40,6 +40,21 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+/* Hero Background */
+.hero-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(22, 33, 62, 0.85) 100%),
+    url('https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+  z-index: -1;
+  opacity: 0.15;
 }
 
 /* Header */
@@ -277,8 +292,7 @@ header {
   background: var(--bg-white);
   border: 2px solid var(--border);
   border-radius: var(--radius);
-  padding: 30px 20px;
-  text-align: center;
+  overflow: hidden;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -291,46 +305,56 @@ header {
 
 .option-card.selected {
   border-color: var(--primary);
-  background: linear-gradient(135deg, #fff5f0 0%, #ffffff 100%);
+  box-shadow: 0 0 0 4px rgba(255, 107, 31, 0.15);
 }
 
-.option-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-light);
-  transition: var(--transition);
+/* Option Card Images */
+.option-image {
+  position: relative;
+  height: 140px;
+  overflow: hidden;
 }
 
-.option-icon svg {
-  width: 36px;
-  height: 36px;
-  fill: var(--text-light);
-  transition: var(--transition);
+.option-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.option-card:hover .option-icon,
-.option-card.selected .option-icon {
-  background: var(--primary);
+.option-card:hover .option-image img {
+  transform: scale(1.08);
 }
 
-.option-card:hover .option-icon svg,
-.option-card.selected .option-icon svg {
-  fill: white;
+.option-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  pointer-events: none;
 }
 
-.option-icon.broken { background: #ffebee; }
-.option-icon.broken svg { fill: #e53935; }
-.option-icon.maintenance { background: #e3f2fd; }
-.option-icon.maintenance svg { fill: #1976d2; }
-.option-icon.tyres { background: #f3e5f5; }
-.option-icon.tyres svg { fill: #7b1fa2; }
-.option-icon.inspection { background: #fff3e0; }
-.option-icon.inspection svg { fill: #f57c00; }
+.option-overlay.broken {
+  background: linear-gradient(to top, rgba(229, 57, 53, 0.8) 0%, transparent 100%);
+}
+
+.option-overlay.maintenance {
+  background: linear-gradient(to top, rgba(25, 118, 210, 0.8) 0%, transparent 100%);
+}
+
+.option-overlay.tyres {
+  background: linear-gradient(to top, rgba(123, 31, 162, 0.8) 0%, transparent 100%);
+}
+
+.option-overlay.inspection {
+  background: linear-gradient(to top, rgba(245, 124, 0, 0.8) 0%, transparent 100%);
+}
+
+.option-content {
+  padding: 20px;
+  text-align: center;
+}
 
 .option-card h3 {
   font-size: 1.15rem;
@@ -343,6 +367,49 @@ header {
   font-size: 0.9rem;
   color: var(--text-light);
   line-height: 1.4;
+}
+
+/* Small option cards (Step 2) - Icon style fallback */
+.option-cards.small .option-card {
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.option-cards.small .option-image {
+  display: none;
+}
+
+.option-cards.small .option-content {
+  padding: 0;
+}
+
+.option-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-light);
+  transition: var(--transition);
+}
+
+.option-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--text-light);
+  transition: var(--transition);
+}
+
+.option-card:hover .option-icon,
+.option-card.selected .option-icon {
+  background: var(--primary);
+}
+
+.option-card:hover .option-icon svg,
+.option-card.selected .option-icon svg {
+  fill: white;
 }
 
 /* Symptom/Service List */
@@ -711,6 +778,61 @@ header {
   font-size: 1.1rem;
 }
 
+/* Trust Section */
+.trust-section {
+  background: var(--bg-white);
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.trust-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.trust-item {
+  text-align: center;
+}
+
+.trust-image {
+  width: 100%;
+  height: 160px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.trust-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.trust-item:hover .trust-image img {
+  transform: scale(1.05);
+}
+
+.trust-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.trust-item p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
 /* Contact Bar */
 .contact-bar {
   background: var(--secondary);
@@ -746,6 +868,26 @@ footer {
   padding: 15px 0;
   text-align: center;
   font-size: 0.85rem;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.photo-credit {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.photo-credit a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.photo-credit a:hover {
+  text-decoration: underline;
 }
 
 /* Loading State */
@@ -862,8 +1004,8 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .option-card {
-    padding: 25px 20px;
+  .option-image {
+    height: 120px;
   }
 
   .form-row {
@@ -887,6 +1029,19 @@ footer {
     width: 32px;
     height: 32px;
     font-size: 0.85rem;
+  }
+
+  .trust-section {
+    padding: 40px 20px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .trust-image {
+    height: 180px;
   }
 }
 
