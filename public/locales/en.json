@@ -94,6 +94,14 @@
   "contact": {
     "hours": "Mon-Fri 8-19, Sat 9-15"
   },
+  "trust": {
+    "mechanics": "Expert Mechanics",
+    "mechanicsDesc": "Certified professionals with 15+ years experience",
+    "equipment": "Modern Equipment",
+    "equipmentDesc": "Latest diagnostic tools & technology",
+    "parts": "Quality Parts",
+    "partsDesc": "OEM & premium aftermarket parts"
+  },
   "success": {
     "title": "Booking Confirmed!",
     "message": "Thank you for your booking. We have sent a confirmation to your email.",

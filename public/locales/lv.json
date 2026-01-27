@@ -94,6 +94,14 @@
   "contact": {
     "hours": "P-Pk 8-19, Se 9-15"
   },
+  "trust": {
+    "mechanics": "Pieredzējuši mehāniķi",
+    "mechanicsDesc": "Sertificēti profesionāļi ar 15+ gadu pieredzi",
+    "equipment": "Moderna aprīkojums",
+    "equipmentDesc": "Jaunākās diagnostikas iekārtas un tehnoloģijas",
+    "parts": "Kvalitatīvas detaļas",
+    "partsDesc": "OEM un augstākās kvalitātes rezerves daļas"
+  },
   "success": {
     "title": "Rezervācija apstiprināta!",
     "message": "Paldies par rezervāciju. Apstiprinājums nosūtīts uz jūsu e-pastu.",
