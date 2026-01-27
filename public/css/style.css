@@ -55,6 +55,7 @@ body {
     url('https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
   z-index: -1;
   opacity: 0.15;
+  pointer-events: none;
 }
 
 /* Header */
@@ -295,6 +296,7 @@ header {
   overflow: hidden;
   cursor: pointer;
   transition: var(--transition);
+  position: relative;
 }
 
 .option-card:hover {
@@ -313,6 +315,7 @@ header {
   position: relative;
   height: 140px;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .option-image img {
@@ -320,6 +323,7 @@ header {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+  pointer-events: none;
 }
 
 .option-card:hover .option-image img {
@@ -354,6 +358,8 @@ header {
 .option-content {
   padding: 20px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .option-card h3 {
@@ -375,12 +381,18 @@ header {
   text-align: center;
 }
 
-.option-cards.small .option-image {
+.option-cards.small .option-card .option-image {
   display: none;
 }
 
-.option-cards.small .option-content {
+.option-cards.small .option-card .option-content {
   padding: 0;
+}
+
+/* Ensure cards without images still work (Step 2, 3) */
+.option-cards.small .option-card h3,
+.option-cards.small .option-card p {
+  display: block;
 }
 
 .option-icon {
