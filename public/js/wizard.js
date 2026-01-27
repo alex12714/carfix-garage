@@ -3,7 +3,7 @@
 class CarFixWizard {
   constructor() {
     this.currentStep = 1;
-    this.currentLang = localStorage.getItem('lang') || 'en';
+    this.currentLang = localStorage.getItem('lang') || 'lv';
     this.translations = {};
     this.services = null;
     this.selectedReason = null;
