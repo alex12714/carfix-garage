@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Fix Garage - Professional Auto Repair in Riga</title>
+  <meta name="description" content="Professional car repair services in Riga. Engine repair, brakes, suspension, tyres, and more. Book online with instant confirmation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23FF6B1F' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='70' text-anchor='middle' fill='white' font-size='50' font-family='Arial' font-weight='bold'%3ECF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+        </div>
+        <span>Car Fix</span>
+      </a>
+
+      <nav id="mainNav">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#booking" data-i18n="nav.booking">Book Now</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <div class="language-selector">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="lv">LV</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 data-i18n="hero.title">Expert Car Repair</h1>
+      <p data-i18n="hero.subtitle">Quality service you can trust</p>
+      <a href="#booking" class="btn btn-primary" data-i18n="hero.cta">Book an Appointment</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+      <div class="services-grid" id="servicesGrid">
+        <!-- Services will be loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <h2 class="section-title" data-i18n="booking.title">Book Your Appointment</h2>
+
+      <div class="booking-container">
+        <!-- Booking Summary -->
+        <div class="booking-summary">
+          <h3 data-i18n="booking.selectedServices">Selected Services</h3>
+          <div class="selected-services-list" id="selectedServicesList">
+            <p class="no-services-message" data-i18n="booking.noServices">No services selected</p>
+          </div>
+          <div class="booking-total">
+            <span data-i18n="booking.total">Total</span>
+            <span class="amount">€<span id="totalPrice">0</span></span>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <form class="booking-form" id="bookingForm">
+          <!-- Customer Info -->
+          <div class="form-section">
+            <h4 data-i18n="booking.customerInfo">Your Information</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customerName" data-i18n="booking.name">Full Name</label>
+                <input type="text" id="customerName" name="customerName" required>
+              </div>
+              <div class="form-group">
+                <label for="customerPhone" data-i18n="booking.phone">Phone Number</label>
+                <input type="tel" id="customerPhone" name="customerPhone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="customerEmail" data-i18n="booking.email">Email</label>
+              <input type="email" id="customerEmail" name="customerEmail" required>
+            </div>
+          </div>
+
+          <!-- Vehicle Info -->
+          <div class="form-section">
+            <h4 data-i18n="booking.vehicleInfo">Vehicle Information</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vehicleMake" data-i18n="booking.make">Make</label>
+                <input type="text" id="vehicleMake" name="vehicleMake" placeholder="e.g., Toyota">
+              </div>
+              <div class="form-group">
+                <label for="vehicleModel" data-i18n="booking.model">Model</label>
+                <input type="text" id="vehicleModel" name="vehicleModel" placeholder="e.g., Corolla">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vehicleYear" data-i18n="booking.year">Year</label>
+                <input type="text" id="vehicleYear" name="vehicleYear" placeholder="e.g., 2020">
+              </div>
+              <div class="form-group">
+                <label for="vehicleRegistration" data-i18n="booking.registration">Registration Number</label>
+                <input type="text" id="vehicleRegistration" name="vehicleRegistration" placeholder="e.g., AA-1234">
+              </div>
+            </div>
+          </div>
+
+          <!-- Appointment -->
+          <div class="form-section">
+            <h4 data-i18n="booking.appointment">Appointment</h4>
+            <div class="form-group">
+              <label for="appointmentDate" data-i18n="booking.date">Preferred Date</label>
+              <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="booking.time">Preferred Time</label>
+              <div class="time-slots" id="timeSlots">
+                <div class="time-slot" data-time="morning" data-i18n="booking.morning">Morning (8:00 - 12:00)</div>
+                <div class="time-slot" data-time="afternoon" data-i18n="booking.afternoon">Afternoon (12:00 - 17:00)</div>
+                <div class="time-slot" data-time="evening" data-i18n="booking.evening">Evening (17:00 - 19:00)</div>
+              </div>
+              <input type="hidden" id="appointmentTime" name="appointmentTime" required>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div class="form-section">
+            <div class="form-group">
+              <label for="notes" data-i18n="booking.notes">Additional Notes</label>
+              <textarea id="notes" name="notes" data-i18n-placeholder="booking.notesPlaceholder" placeholder="Describe your issue or any special requests..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+            <span data-i18n="booking.submit">Proceed to Payment</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4 data-i18n="contact.address">Address</h4>
+              <p>Rujienas 2a, Riga, Latvia</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4 data-i18n="contact.phone">Phone</h4>
+              <p><a href="tel:+37122532304">+371 22532304</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4 data-i18n="contact.email">Email</h4>
+              <p><a href="mailto:segarsj179@gmail.com">segarsj179@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4 data-i18n="contact.hours">Working Hours</h4>
+              <p data-i18n="contact.weekdays">Mon - Fri: 8:00 - 19:00</p>
+              <p data-i18n="contact.saturday">Saturday: 9:00 - 15:00</p>
+              <p data-i18n="contact.sunday">Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.4!2d24.1!3d56.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU3JzAwLjAiTiAyNMKwMDYnMDAuMCJF!5e0!3m2!1sen!2slv!4v1"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p data-i18n="footer.copyright">© 2024 Car Fix Garage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

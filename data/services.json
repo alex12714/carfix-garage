@@ -1,0 +1,411 @@
+{
+  "categories": [
+    {
+      "id": "engine",
+      "name": {
+        "en": "Engine & Mechanical",
+        "lv": "Dzinējs un mehānika",
+        "ru": "Двигатель и механика"
+      },
+      "icon": "engine",
+      "services": [
+        {
+          "id": "oil-change",
+          "name": {
+            "en": "Oil Change",
+            "lv": "Eļļas maiņa",
+            "ru": "Замена масла"
+          },
+          "price": 45,
+          "duration": "30 min"
+        },
+        {
+          "id": "engine-diagnostics",
+          "name": {
+            "en": "Engine Diagnostics",
+            "lv": "Dzinēja diagnostika",
+            "ru": "Диагностика двигателя"
+          },
+          "price": 35,
+          "duration": "45 min"
+        },
+        {
+          "id": "timing-belt",
+          "name": {
+            "en": "Timing Belt Replacement",
+            "lv": "Zobsiksnas maiņa",
+            "ru": "Замена ремня ГРМ"
+          },
+          "price": null,
+          "priceNote": {
+            "en": "Request quote",
+            "lv": "Pieprasīt cenu",
+            "ru": "Запросить цену"
+          },
+          "duration": "3-5 hours"
+        },
+        {
+          "id": "spark-plugs",
+          "name": {
+            "en": "Spark Plug Replacement",
+            "lv": "Aizdedzes sveču maiņa",
+            "ru": "Замена свечей зажигания"
+          },
+          "price": 40,
+          "duration": "30 min"
+        },
+        {
+          "id": "coolant-flush",
+          "name": {
+            "en": "Coolant Flush",
+            "lv": "Dzesēšanas šķidruma maiņa",
+            "ru": "Замена охлаждающей жидкости"
+          },
+          "price": 55,
+          "duration": "45 min"
+        },
+        {
+          "id": "transmission-service",
+          "name": {
+            "en": "Transmission Service",
+            "lv": "Transmisijas apkope",
+            "ru": "Обслуживание трансмиссии"
+          },
+          "price": 120,
+          "duration": "1-2 hours"
+        },
+        {
+          "id": "engine-repair",
+          "name": {
+            "en": "Engine Repair",
+            "lv": "Dzinēja remonts",
+            "ru": "Ремонт двигателя"
+          },
+          "price": null,
+          "priceNote": {
+            "en": "Request quote",
+            "lv": "Pieprasīt cenu",
+            "ru": "Запросить цену"
+          },
+          "duration": "Varies"
+        }
+      ]
+    },
+    {
+      "id": "brakes",
+      "name": {
+        "en": "Brakes & Suspension",
+        "lv": "Bremzes un balstiekārta",
+        "ru": "Тормоза и подвеска"
+      },
+      "icon": "brakes",
+      "services": [
+        {
+          "id": "brake-pads",
+          "name": {
+            "en": "Brake Pad Replacement",
+            "lv": "Bremžu kluču maiņa",
+            "ru": "Замена тормозных колодок"
+          },
+          "price": 80,
+          "duration": "1 hour"
+        },
+        {
+          "id": "brake-discs",
+          "name": {
+            "en": "Brake Disc Replacement",
+            "lv": "Bremžu disku maiņa",
+            "ru": "Замена тормозных дисков"
+          },
+          "price": 150,
+          "duration": "1.5 hours"
+        },
+        {
+          "id": "brake-fluid",
+          "name": {
+            "en": "Brake Fluid Change",
+            "lv": "Bremžu šķidruma maiņa",
+            "ru": "Замена тормозной жидкости"
+          },
+          "price": 45,
+          "duration": "30 min"
+        },
+        {
+          "id": "suspension-check",
+          "name": {
+            "en": "Suspension Check/Repair",
+            "lv": "Balstiekārtas pārbaude/remonts",
+            "ru": "Проверка/ремонт подвески"
+          },
+          "price": 40,
+          "duration": "45 min"
+        },
+        {
+          "id": "shock-absorbers",
+          "name": {
+            "en": "Shock Absorber Replacement",
+            "lv": "Amortizatoru maiņa",
+            "ru": "Замена амортизаторов"
+          },
+          "price": 180,
+          "duration": "2 hours"
+        },
+        {
+          "id": "wheel-alignment",
+          "name": {
+            "en": "Wheel Alignment",
+            "lv": "Riteņu savirze",
+            "ru": "Развал-схождение"
+          },
+          "price": 50,
+          "duration": "45 min"
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "name": {
+        "en": "Electrical",
+        "lv": "Elektriskie darbi",
+        "ru": "Электрика"
+      },
+      "icon": "electrical",
+      "services": [
+        {
+          "id": "battery-replacement",
+          "name": {
+            "en": "Battery Replacement",
+            "lv": "Akumulatora maiņa",
+            "ru": "Замена аккумулятора"
+          },
+          "price": 30,
+          "duration": "20 min"
+        },
+        {
+          "id": "alternator-repair",
+          "name": {
+            "en": "Alternator Repair",
+            "lv": "Ģeneratora remonts",
+            "ru": "Ремонт генератора"
+          },
+          "price": 120,
+          "duration": "1.5 hours"
+        },
+        {
+          "id": "starter-motor",
+          "name": {
+            "en": "Starter Motor Repair",
+            "lv": "Startera remonts",
+            "ru": "Ремонт стартера"
+          },
+          "price": 100,
+          "duration": "1.5 hours"
+        },
+        {
+          "id": "lighting-repair",
+          "name": {
+            "en": "Lighting Repair",
+            "lv": "Apgaismojuma remonts",
+            "ru": "Ремонт освещения"
+          },
+          "price": 35,
+          "duration": "30 min"
+        },
+        {
+          "id": "electrical-diagnostics",
+          "name": {
+            "en": "Electrical Diagnostics",
+            "lv": "Elektriskā diagnostika",
+            "ru": "Электрическая диагностика"
+          },
+          "price": 45,
+          "duration": "1 hour"
+        }
+      ]
+    },
+    {
+      "id": "tyres",
+      "name": {
+        "en": "Tyres & Wheels",
+        "lv": "Riepas un riteņi",
+        "ru": "Шины и колёса"
+      },
+      "icon": "tyres",
+      "services": [
+        {
+          "id": "tyre-change-seasonal",
+          "name": {
+            "en": "Seasonal Tyre Change",
+            "lv": "Sezonas riepu maiņa",
+            "ru": "Сезонная замена шин"
+          },
+          "price": 25,
+          "duration": "30 min"
+        },
+        {
+          "id": "tyre-repair",
+          "name": {
+            "en": "Tyre Repair/Patching",
+            "lv": "Riepu remonts/lāpīšana",
+            "ru": "Ремонт/латание шин"
+          },
+          "price": 15,
+          "duration": "20 min"
+        },
+        {
+          "id": "wheel-balancing",
+          "name": {
+            "en": "Wheel Balancing",
+            "lv": "Riteņu balansēšana",
+            "ru": "Балансировка колёс"
+          },
+          "price": 20,
+          "duration": "20 min"
+        },
+        {
+          "id": "tyre-pressure",
+          "name": {
+            "en": "Tyre Pressure Check",
+            "lv": "Riepu spiediena pārbaude",
+            "ru": "Проверка давления в шинах"
+          },
+          "price": 0,
+          "duration": "5 min"
+        }
+      ]
+    },
+    {
+      "id": "exhaust",
+      "name": {
+        "en": "Exhaust & Emissions",
+        "lv": "Izplūdes sistēma",
+        "ru": "Выхлоп и выбросы"
+      },
+      "icon": "exhaust",
+      "services": [
+        {
+          "id": "exhaust-repair",
+          "name": {
+            "en": "Exhaust Repair",
+            "lv": "Izplūdes sistēmas remonts",
+            "ru": "Ремонт выхлопной системы"
+          },
+          "price": null,
+          "priceNote": {
+            "en": "Request quote",
+            "lv": "Pieprasīt cenu",
+            "ru": "Запросить цену"
+          },
+          "duration": "1-3 hours"
+        },
+        {
+          "id": "catalytic-converter",
+          "name": {
+            "en": "Catalytic Converter Service",
+            "lv": "Katalītiskā konvertora apkope",
+            "ru": "Обслуживание каталитического нейтрализатора"
+          },
+          "price": null,
+          "priceNote": {
+            "en": "Request quote",
+            "lv": "Pieprasīt cenu",
+            "ru": "Запросить цену"
+          },
+          "duration": "1-2 hours"
+        },
+        {
+          "id": "emissions-testing",
+          "name": {
+            "en": "Emissions Testing",
+            "lv": "Emisiju pārbaude",
+            "ru": "Проверка выбросов"
+          },
+          "price": 25,
+          "duration": "30 min"
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "name": {
+        "en": "General Services",
+        "lv": "Vispārīgie pakalpojumi",
+        "ru": "Общие услуги"
+      },
+      "icon": "general",
+      "services": [
+        {
+          "id": "full-inspection",
+          "name": {
+            "en": "Full Vehicle Inspection",
+            "lv": "Pilna automašīnas pārbaude",
+            "ru": "Полный осмотр автомобиля"
+          },
+          "price": 75,
+          "duration": "1.5 hours"
+        },
+        {
+          "id": "pre-purchase",
+          "name": {
+            "en": "Pre-Purchase Inspection",
+            "lv": "Pirms-pirkuma pārbaude",
+            "ru": "Предпокупочный осмотр"
+          },
+          "price": 65,
+          "duration": "1 hour"
+        },
+        {
+          "id": "ac-service",
+          "name": {
+            "en": "AC Service/Regas",
+            "lv": "Kondicioniera apkope",
+            "ru": "Обслуживание кондиционера"
+          },
+          "price": 60,
+          "duration": "45 min"
+        },
+        {
+          "id": "wiper-replacement",
+          "name": {
+            "en": "Windscreen Wiper Replacement",
+            "lv": "Logu tīrītāju maiņa",
+            "ru": "Замена стеклоочистителей"
+          },
+          "price": 20,
+          "duration": "10 min"
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "name": {
+        "en": "Logistics",
+        "lv": "Loģistika",
+        "ru": "Логистика"
+      },
+      "icon": "logistics",
+      "services": [
+        {
+          "id": "car-pickup",
+          "name": {
+            "en": "Car Pickup",
+            "lv": "Automašīnas saņemšana",
+            "ru": "Забор автомобиля"
+          },
+          "price": 25,
+          "duration": "Varies"
+        },
+        {
+          "id": "car-delivery",
+          "name": {
+            "en": "Car Delivery",
+            "lv": "Automašīnas piegāde",
+            "ru": "Доставка автомобиля"
+          },
+          "price": 25,
+          "duration": "Varies"
+        }
+      ]
+    }
+  ]
+}

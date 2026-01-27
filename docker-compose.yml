@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  carfix-garage:
+    build: .
+    container_name: carfix-garage
+    restart: unless-stopped
+    ports:
+      - "3030:3000"
+    environment:
+      - NODE_ENV=production
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+      - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
+    volumes:
+      - carfix-data:/app/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.carfix.rule=Host(`carfix.sites.onfire.so`)"
+      - "traefik.http.routers.carfix.entrypoints=websecure"
+      - "traefik.http.routers.carfix.tls.certresolver=letsencrypt"
+      - "traefik.http.services.carfix.loadbalancer.server.port=3000"
+    networks:
+      - web
+
+volumes:
+  carfix-data:
+
+networks:
+  web:
+    external: true

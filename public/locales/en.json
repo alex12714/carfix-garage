@@ -1,0 +1,81 @@
+{
+  "site": {
+    "title": "Car Fix Garage",
+    "tagline": "Professional Auto Repair in Riga"
+  },
+  "nav": {
+    "services": "Services",
+    "booking": "Book Now",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Expert Car Repair",
+    "subtitle": "Quality service you can trust",
+    "cta": "Book an Appointment"
+  },
+  "services": {
+    "title": "Our Services",
+    "selectServices": "Select Services",
+    "price": "Price",
+    "duration": "Duration",
+    "free": "Free",
+    "requestQuote": "Request Quote",
+    "perItem": "per item"
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "selectedServices": "Selected Services",
+    "total": "Total",
+    "noServices": "No services selected",
+    "customerInfo": "Your Information",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "vehicleInfo": "Vehicle Information",
+    "make": "Make",
+    "model": "Model",
+    "year": "Year",
+    "registration": "Registration Number",
+    "appointment": "Appointment",
+    "date": "Preferred Date",
+    "time": "Preferred Time",
+    "notes": "Additional Notes",
+    "notesPlaceholder": "Describe your issue or any special requests...",
+    "submit": "Proceed to Payment",
+    "submitQuote": "Request Quote",
+    "morning": "Morning (8:00 - 12:00)",
+    "afternoon": "Afternoon (12:00 - 17:00)",
+    "evening": "Evening (17:00 - 19:00)"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Working Hours",
+    "weekdays": "Mon - Fri: 8:00 - 19:00",
+    "saturday": "Saturday: 9:00 - 15:00",
+    "sunday": "Sunday: Closed"
+  },
+  "footer": {
+    "copyright": "© 2024 Car Fix Garage. All rights reserved."
+  },
+  "success": {
+    "title": "Booking Confirmed!",
+    "message": "Thank you for your booking. We have sent a confirmation to your email.",
+    "bookingId": "Booking ID",
+    "appointmentDate": "Appointment Date",
+    "appointmentTime": "Appointment Time",
+    "total": "Total Paid",
+    "backHome": "Back to Home"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email",
+    "invalidPhone": "Please enter a valid phone number",
+    "selectService": "Please select at least one service",
+    "selectDate": "Please select a date",
+    "selectTime": "Please select a time slot",
+    "bookingFailed": "Booking failed. Please try again."
+  }
+}

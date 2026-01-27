@@ -1,0 +1,81 @@
+{
+  "site": {
+    "title": "Car Fix Garage",
+    "tagline": "Profesionāls auto remonts Rīgā"
+  },
+  "nav": {
+    "services": "Pakalpojumi",
+    "booking": "Rezervēt",
+    "contact": "Kontakti"
+  },
+  "hero": {
+    "title": "Ekspertu auto remonts",
+    "subtitle": "Kvalitatīvs serviss, kam varat uzticēties",
+    "cta": "Rezervēt vizīti"
+  },
+  "services": {
+    "title": "Mūsu pakalpojumi",
+    "selectServices": "Izvēlieties pakalpojumus",
+    "price": "Cena",
+    "duration": "Ilgums",
+    "free": "Bezmaksas",
+    "requestQuote": "Pieprasīt cenu",
+    "perItem": "par gab."
+  },
+  "booking": {
+    "title": "Rezervējiet vizīti",
+    "selectedServices": "Izvēlētie pakalpojumi",
+    "total": "Kopā",
+    "noServices": "Nav izvēlēti pakalpojumi",
+    "customerInfo": "Jūsu informācija",
+    "name": "Vārds, uzvārds",
+    "email": "E-pasts",
+    "phone": "Tālrunis",
+    "vehicleInfo": "Automašīnas informācija",
+    "make": "Marka",
+    "model": "Modelis",
+    "year": "Gads",
+    "registration": "Reģistrācijas numurs",
+    "appointment": "Vizīte",
+    "date": "Vēlamais datums",
+    "time": "Vēlamais laiks",
+    "notes": "Papildu piezīmes",
+    "notesPlaceholder": "Aprakstiet problēmu vai īpašos pieprasījumus...",
+    "submit": "Turpināt uz apmaksu",
+    "submitQuote": "Pieprasīt cenu",
+    "morning": "Rīts (8:00 - 12:00)",
+    "afternoon": "Pēcpusdiena (12:00 - 17:00)",
+    "evening": "Vakars (17:00 - 19:00)"
+  },
+  "contact": {
+    "title": "Sazinieties ar mums",
+    "address": "Adrese",
+    "phone": "Tālrunis",
+    "email": "E-pasts",
+    "hours": "Darba laiks",
+    "weekdays": "P - Pk: 8:00 - 19:00",
+    "saturday": "Sestdiena: 9:00 - 15:00",
+    "sunday": "Svētdiena: Slēgts"
+  },
+  "footer": {
+    "copyright": "© 2024 Car Fix Garage. Visas tiesības aizsargātas."
+  },
+  "success": {
+    "title": "Rezervācija apstiprināta!",
+    "message": "Paldies par rezervāciju. Apstiprinājums nosūtīts uz jūsu e-pastu.",
+    "bookingId": "Rezervācijas ID",
+    "appointmentDate": "Vizītes datums",
+    "appointmentTime": "Vizītes laiks",
+    "total": "Kopējā summa",
+    "backHome": "Atpakaļ uz sākumu"
+  },
+  "errors": {
+    "required": "Šis lauks ir obligāts",
+    "invalidEmail": "Lūdzu, ievadiet derīgu e-pastu",
+    "invalidPhone": "Lūdzu, ievadiet derīgu tālruņa numuru",
+    "selectService": "Lūdzu, izvēlieties vismaz vienu pakalpojumu",
+    "selectDate": "Lūdzu, izvēlieties datumu",
+    "selectTime": "Lūdzu, izvēlieties laiku",
+    "bookingFailed": "Rezervācija neizdevās. Lūdzu, mēģiniet vēlreiz."
+  }
+}
