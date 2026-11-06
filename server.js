@@ -236,24 +236,41 @@ app.post('/api/quote-request', (req, res) => {
   }
 });
 
-// Stripe webhook
-app.post('/api/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
-  const sig = req.headers['stripe-signature'];
-  let event;
+// Stripe webhook.
+// Every event must carry a valid Stripe-Signature for STRIPE_WEBHOOK_SECRET.
+// Without a usable secret the endpoint refuses everything (fail closed):
+// parsing an unsigned body would let anyone mark a booking paid.
+function usableWebhookSecret() {
+  const s = (process.env.STRIPE_WEBHOOK_SECRET || '').trim();
+  if (!s.startsWith('whsec_') || s.startsWith('whsec_placeholder')) return null;
+  return s;
+}
 
+app.post('/api/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
+  const secret = usableWebhookSecret();
+  if (!secret) {
+    console.error('Webhook refused: STRIPE_WEBHOOK_SECRET is missing or a placeholder');
+    return res.status(500).send('Webhook not configured');
+  }
+  const sig = req.headers['stripe-signature'];
+  if (!sig) {
+    return res.status(400).send('Missing stripe-signature');
+  }
+
+  let event;
   try {
-    if (process.env.STRIPE_WEBHOOK_SECRET) {
-      event = stripe.webhooks.constructEvent(req.body, sig, process.env.STRIPE_WEBHOOK_SECRET);
-    } else {
-      event = JSON.parse(req.body);
-    }
+    event = stripe.webhooks.constructEvent(req.body, sig, secret);
   } catch (err) {
-    console.error('Webhook error:', err.message);
-    return res.status(400).send(`Webhook Error: ${err.message}`);
+    console.error('Webhook signature verification failed:', err.message);
+    return res.status(400).send('Invalid signature');
   }
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
+    if (session.payment_status !== 'paid') {
+      console.log('Checkout completed but not paid yet:', session.id);
+      return res.json({ received: true });
+    }
 
     const stmt = db.prepare(`
       UPDATE bookings
